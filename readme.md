@@ -52,3 +52,6 @@ $.when( , , ).done(function(){})
 |./		|相对路径			|
 |../	|上一级目录			|
 
+#### 阻止some()
+* 用 `return true`
+
