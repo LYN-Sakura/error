@@ -55,3 +55,8 @@ $.when( , , ).done(function(){})
 #### 阻止some()
 * 用 `return true`
 
+#### 解决编辑器终端运行yarn被禁止
+1. 管理员身份运行编辑器
+2. 在终端中执行get-ExecutionPolicy，显示Restricted，表示状态是禁止的；
+3. 这时执行set-ExecutionPolicy RemoteSigned；
+4. 此时再执行get-ExecutionPolicy，显示RemoteSigned，则表示状态解禁，可以运行
